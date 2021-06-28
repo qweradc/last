@@ -3,7 +3,7 @@
 ## 文件路径、脚本网址
 dir_shell=$(dirname $(readlink -f "$0"))
 dir_root=$dir_shell
-url_scripts=https://github.com/iceparis/jd_scripts.git
+url_scripts=${JD_SCRIPTS_URL:-git@jd_scripts_github:iceparis/jd_scripts.git}
 send_mark=$dir_shell/send_mark
 
 ## 导入通用变量与函数
